@@ -1,0 +1,4 @@
+Performed essential data cleaning tasks including handling missing values, removing duplicates, and standardizing text entries.
+Converted date formats for consistency and renamed columns for clarity and uniformity.
+Ensured correct data types for all fields (e.g., integers, dates).
+These steps were executed using Python (Pandas) and Excel filters where applicable.
