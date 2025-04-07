@@ -1,0 +1,26 @@
+1. What are missing values and how do you handle them? 
+	Missing values are the empty cells in the dataset we can find it by .isnum().sum() it will return the sum of total null values and we can fill it or remove it by fillna(), dropna(), drop(). If the dataset consists less than 30% null values we can fill it , if it contains more than 30% then we will drop it.
+
+2. How do you treat duplicate records? 
+	We can find duplicates values by .duplicated().sum() it will return the total number of duplicates values and then we can use dropduplicates() to remove the duplicates.
+
+3. Difference between dropna() and fillna() in Pandas? 
+	dropna() is used to drop the null rows whereas fillna() is used to fill the empty cells.
+	dropna() is used if multiple columns have null values in same row whereas fillna() is used if less than 30% empty cells are there.
+
+4. What is outlier treatment and why is it important? 
+	Outlier are the junk data or wrong input in the dataset. It is important to remove because it can influence our dataset which can result in wrong data model training which can effect our overall performance.
+
+5. Explain the process of standardizing data. 
+	Standardizing data involves converting values into a common format to ensure consistency across the dataset.This includes making text lowercase, formatting dates uniformly, unifying category labels (e.g., "Male", "male", "M" → "Male"), and scaling numerical values if needed.
+
+6. How do you handle inconsistent data formats (e.g., date/time)? 
+	Inconsistent formats can be fixed by parsing and converting them to a standard format using tools like pd.to_datetime() in Python or date formatting functions in Excel.I first identify the various formats, then transform all entries to a uniform style like dd-mm-yyyy.
+
+7. What are common data cleaning challenges? 
+	Common challenges include missing values, duplicate entries, inconsistent formats, incorrect data types, and noisy or irrelevant data.
+It can also be tough to detect subtle inconsistencies in large datasets, like similar categories or typos.
+
+8. How can you check data quality?
+	Data quality can be checked by validating for completeness, consistency, accuracy, and relevance.Techniques include summary statistics, null value checks, data type validation, and visual inspection through charts or filters.
+
